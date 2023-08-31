@@ -11,11 +11,15 @@ public class Vetores {
 		
 		//Criando um vetor com elementos:
 		int[] v3 = {1 ,2, 4};
+		
+		String[] nomes = {"Julia", "Luis"};
+		
+		String nome = nomes[1];
 				  //0 //1 //3   
 		int valor1 = v3[0]; //Colocando primeiro elemento do vetor em uma variável
 		System.out.println("O primeiro elemento do vetor é: " + valor1);
 		
-		int tamanhoVetor = v3.length; //Exibe o tamanho do vetor
+		int tamanhoVetor = nomes.length; //Exibe o tamanho do vetor
 		System.out.println("O tamnho do vetor é: " + tamanhoVetor);
 		
 		//Percorrendo todos os valores de um vetor:
