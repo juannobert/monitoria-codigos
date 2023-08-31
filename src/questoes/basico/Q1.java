@@ -19,5 +19,7 @@ public class Q1 {
 		for(int i =0; i < 4;i++) {  
 			System.out.println("O número da posição " + i + " é " + vetor[i]);
 		}
+		
+		sc.close();
 	}
 }

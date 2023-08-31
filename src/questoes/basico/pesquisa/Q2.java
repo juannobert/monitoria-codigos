@@ -1,28 +1,31 @@
-package questoes.operacoes;
+package questoes.basico.pesquisa;
 
 import java.util.Scanner;
-//Implemente um programa que calcule a soma dos elementos em um vetor de números.
-public class Q1 {
+
+public class Q2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int[] vetor = new int[5];
-		int soma = 0;
-		
-	
+		int num, cont = 0;
 		
 		for(int i =0; i < vetor.length;i++) {  
 			System.out.println("Digite um número: ");
 			vetor[i] = sc.nextInt();
 		}
 		
-
+		System.out.println("Digite um número que você deseja busca no vetor");
+		num = sc.nextInt();
+		
 		for(int i =0; i < vetor.length;i++) {  
-			soma += vetor[i];
+			if(vetor[i] == num) {
+				cont++;
+			}
 		}
 		
-		System.out.println("A soma do vetor é: " + soma);
+		System.out.println("O número " + num + " aparece " + cont + " vez(es) no vetor");
 		
-		sc.close();
+		
+		
 	}
 }

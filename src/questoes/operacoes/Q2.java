@@ -1,17 +1,17 @@
 package questoes.operacoes;
 
 import java.util.Scanner;
-//Implemente um programa que calcule a soma dos elementos em um vetor de números.
-public class Q1 {
 
+//Crie um programa que multiplique cada elemento de um vetor por um valor escalar fornecido pelo usuário. 
+public class Q2 {
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int[] vetor = new int[5];
 		int soma = 0;
+		double media;
 		
-	
-		
-		for(int i =0; i < vetor.length;i++) {  
+		for(int i = 0; i < vetor.length;i++) {  
 			System.out.println("Digite um número: ");
 			vetor[i] = sc.nextInt();
 		}
@@ -21,8 +21,12 @@ public class Q1 {
 			soma += vetor[i];
 		}
 		
-		System.out.println("A soma do vetor é: " + soma);
+		media =  soma / vetor.length;
+		
+		System.out.println("A média dos números do vetor é igual a: " + media);
 		
 		sc.close();
+		
 	}
+
 }
